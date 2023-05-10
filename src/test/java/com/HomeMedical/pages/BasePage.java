@@ -1,12 +1,13 @@
 package com.HomeMedical.pages;
 
+import com.HomeMedical.step_definitions.CreateLogin;
 import com.HomeMedical.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-    public LoginPage(){
+public class BasePage {
+    public BasePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath= "(//a[contains(text(),'Customer Login')])[1]")

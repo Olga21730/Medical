@@ -1,6 +1,6 @@
 package com.HomeMedical.step_definitions;
 
-import com.HomeMedical.pages.LoginPage;
+import com.HomeMedical.pages.BasePage;
 import com.HomeMedical.utilities.BrowserUtils;
 import com.HomeMedical.utilities.ConfigurationReader;
 import com.HomeMedical.utilities.Driver;
@@ -10,7 +10,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class CreateLogin {
-    LoginPage loghinPage = new LoginPage();
+   BasePage loghinPage = new BasePage();
     @Given("Dashboard should be displayed")
     public void dashboard_should_be_displayed() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
